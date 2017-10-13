@@ -46,9 +46,9 @@ class ViewController: UIViewController {
         let filteredDict = dict.filter({ $0.1 != 0 })
         if filteredDict.count == 0 {
             return true
-        } else {
-            return false
         }
+        
+        return false
     }
 
 }
