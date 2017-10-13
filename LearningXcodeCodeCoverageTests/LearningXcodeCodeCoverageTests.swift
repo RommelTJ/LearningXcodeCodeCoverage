@@ -27,5 +27,8 @@ class LearningXcodeCodeCoverageTests: XCTestCase {
     func testDifferentLengthStrings() {
         XCTAssertFalse(myVC.checkWord(word: "ab", isAnagramOfWord: "abc"))
     }
-    
+
+    func testEmptyStrings() {
+        XCTAssert(myVC.checkWord(word: "", isAnagramOfWord: ""))
+    }
 }
