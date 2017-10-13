@@ -23,5 +23,9 @@ class LearningXcodeCodeCoverageTests: XCTestCase {
     func testEqualOneCharacterStrings() {
         XCTAssert(myVC.checkWord(word: "a", isAnagramOfWord: "a"))
     }
+
+    func testDifferentLengthStrings() {
+        XCTAssertFalse(myVC.checkWord(word: "ab", isAnagramOfWord: "abc"))
+    }
     
 }
