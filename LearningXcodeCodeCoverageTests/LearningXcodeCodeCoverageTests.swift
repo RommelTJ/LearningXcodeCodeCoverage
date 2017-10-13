@@ -35,4 +35,9 @@ class LearningXcodeCodeCoverageTests: XCTestCase {
     func testLongAnagram() {
         XCTAssert(myVC.checkWord(word: "Rommel Rico", isAnagramOfWord: "Ocirl Emmor"))
     }
+
+    func testLongInvalidAnagramWithEqualLengths() {
+        XCTAssertFalse(myVC.checkWord(word: "Rommel Rico", isAnagramOfWord: "Pommel Fico"))
+    }
+
 }
