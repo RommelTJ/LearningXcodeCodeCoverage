@@ -31,4 +31,8 @@ class LearningXcodeCodeCoverageTests: XCTestCase {
     func testEmptyStrings() {
         XCTAssert(myVC.checkWord(word: "", isAnagramOfWord: ""))
     }
+
+    func testLongAnagram() {
+        XCTAssert(myVC.checkWord(word: "Rommel Rico", isAnagramOfWord: "Ocirl Emmor"))
+    }
 }
